@@ -9,7 +9,7 @@ const Layout = (props) => (
 <Segment>
 
     <Grid columns={2} >
-      <Grid.Column key="0gridcolunn" width={4}>
+      <Grid.Column key="0gridcolunn" mobile={16} tablet={8} computer={4}>
     
     <YearFilters filterApplied={props.filters.year} key="0yearfilters" startYear="2006" param={props.param} ></YearFilters>  
  <Divider horizontal>Successfull Launch</Divider>
@@ -18,7 +18,7 @@ const Layout = (props) => (
 <BooleanFilters filterApplied={props.filters.land_success} key="2booleanfilters" name='land_success' param={props.param} ></BooleanFilters>
 </Grid.Column>
 
-<Grid.Column key="1gridcolunn" width={12}>
+<Grid.Column mobile={16}  key="1gridcolunn" tablet={8} computer={12}>
 <Card.Group itemsPerRow={4}>
         <Cards key="cards0" data={props.data}/>
         </Card.Group>
